@@ -145,6 +145,7 @@ function App() {
                 setListExpense(DataList);
               };
               const buttonGetUpdate = (id) => {
+                setToggleForm(true);
                 const listExpenseTemp = [...listExpense];
                 const index = listExpenseTemp.findIndex((card) => {
                   return (card.id == element.id);
